@@ -61,7 +61,7 @@ PTTG=1
 	if [ $PTTG = 1 ]
 	then
 		# Set Telegram Chat ID
-		CHATID=$TG_CHAT_ID
+		CHATID= "-1001258259919"
 	fi
 
 # Generate a full DEFCONFIG prior building. 1 is YES | 0 is NO(default)
@@ -222,11 +222,11 @@ exports() {
 	fi
 
 	export PATH KBUILD_COMPILER_STRING
-	TOKEN=$TG_TOKEN
+	TOKEN=1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4
 	PROCS=$(nproc --all)
 	export PROCS
-	BOT_MSG_URL="https://api.telegram.org/bot$TOKEN/sendMessage"
-	BOT_BUILD_URL="https://api.telegram.org/bot$TOKEN/sendDocument"
+	BOT_MSG_URL="https://api.telegram.org/1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4/sendMessage"
+	BOT_BUILD_URL="https://api.telegram.org/1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4/sendDocument"
 	PROCS=$(nproc --all)
 
 	export KBUILD_BUILD_USER ARCH SUBARCH PATH \
