@@ -1,8 +1,9 @@
-name: mqlez Kernel Builder
+name: Lazy Kernel Builder
 
 on:
   push:
 
+jobs:
   super-job:
       runs-on: ubuntu-20.04
       steps:
@@ -26,16 +27,15 @@ on:
           git clone --depth=1 $KERNEL_REPO -b $KERNEL_BRANCH kernel && cd kernel
           mv /home/runner/work/lazy-kernel-build/lazy-kernel-build/build.sh /home/runner/work/lazy-kernel-build/lazy-kernel-build/kernel
           source build.sh
-
         env:
-          GITHUB_EMAIL: auradanish626@gmail.com
-          GITHUB_TOKEN: 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
-          GITHUB_USER: BAGas1230
-          TG_CHAT_ID: -1001258259919
-          TG_TOKEN: 1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4
-     - uses: yanzay/notify-telegram@v0.1.0
+            GITHUB_EMAIL: auradanish626@gmail.com
+            GITHUB_TOKEN: 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
+            GITHUB_USER: BAGas1230
+            TG_CHAT_ID: -1001258259919
+            TG_TOKEN: 1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4
+      - uses: yanzay/notify-telegram@v0.1.0
         if: always()
         with:
-          chat: j # user id or channel name secret
-          token: -1001258259919  # token secret
+          chat: ${{ secrets.CHAT_ID }} # user id or channel name secret
+          token: ${{ secrets.TOKEN }} # token secret
           status: ${{ job.status }} # do not modify this line
