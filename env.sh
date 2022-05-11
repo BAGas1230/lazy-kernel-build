@@ -1,20 +1,20 @@
 #! /bin/bash
 
 # Kernel Repo
-KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/fajar4561/Kernel_Asus_SDM660
+KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/BAGas1230/kernel_xiaomi_sm6250-5
 
 # Kernel Branch
-KERNEL_BRANCH=perf-eas
+KERNEL_BRANCH=LA.UM.8.9.r1-10600-SM6xx.0
 
 # The name of the device for which the kernel is built
-MODEL="Asus Zenfone Max Pro M1"
+MODEL="redmi note 9p
 
 # The codename of the device
-DEVICE="X00TD"
+DEVICE="joyeuse"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=X00TD_defconfig
+DEFCONFIG=cust_defconfig
 
 # Show manufacturer info
 MANUFACTURERINFO="ASUSTek Computer Inc."
@@ -31,7 +31,7 @@ BUILD_TYPE="Nightly"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc' or 'gcc49' , 'linaro & 'gcc2'
-COMPILER=gcc49
+COMPILER=gclang
 
 # Message on anykernel when installation
 MESSAGE="Salam dari kota congyang"
