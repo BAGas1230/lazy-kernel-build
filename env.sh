@@ -7,10 +7,10 @@ KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/BAGas1230/kern
 KERNEL_BRANCH=LA.UM.8.9.r1-10600-SM6xx.0
 
 # The name of the device for which the kernel is built
-MODEL="redmi note 9p
+MODEL="Asus Zenfone Max Pro M1"
 
 # The codename of the device
-DEVICE="joyeuse"
+DEVICE="X00TD"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
