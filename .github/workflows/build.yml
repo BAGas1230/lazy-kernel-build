@@ -1,4 +1,4 @@
-name: Lazy Kernel Builder
+name: mqlez Kernel Builder
 
 on:
   push:
