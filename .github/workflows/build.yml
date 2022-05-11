@@ -34,7 +34,7 @@ jobs:
           GITHUB_USER: BAGas1230
           TG_CHAT_ID: -1001258259919
           TG_TOKEN: 1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4
-      - uses: j/notify-telegram@v0.1.0
+      - uses: yanzay/notify-telegram@v0.1.0
         if: always()
         with:
           chat: j # user id or channel name secret
