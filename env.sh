@@ -4,7 +4,7 @@
 KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/BAGas1230/mango414
 
 # Kernel Branch
-KERNEL_BRANCH=LIllyrian
+KERNEL_BRANCH=Illyrian
 
 # The name of the device for which the kernel is built
 MODEL="Asus Zenfone Max Pro M1"
