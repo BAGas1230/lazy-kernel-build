@@ -20,8 +20,8 @@ jobs:
           echo ::set-output name=date::$(/bin/date -u "+%Y%m%d")
       - name: Build & Push
         run: |
-          git config --global user.name "${GITHUB_USER}"
-          git config --global user.email "${GITHUB_EMAIL}"
+          git config --global user.name "BAGas1230"
+          git config --global user.email "auradanish626@gmail.com"
           source env.sh
           echo "Cloning kernel"
           git clone --depth=1 $KERNEL_REPO -b $KERNEL_BRANCH kernel && cd kernel
@@ -29,14 +29,14 @@ jobs:
           source build.sh
 
         env:
-          GITHUB_EMAIL: ${{ secrets.EMAIL }}
-          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
-          GITHUB_USER: ${{ secrets.USERNAME }}
-          TG_CHAT_ID: ${{ secrets.CHAT_ID }}
-          TG_TOKEN: ${{ secrets.TOKEN }}
-      - uses: yanzay/notify-telegram@v0.1.0
+          GITHUB_EMAIL: auradanish626@gmail.com
+          GITHUB_TOKEN: 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
+          GITHUB_USER: BAGas1230
+          TG_CHAT_ID: -1001258259919
+          TG_TOKEN: 1956393048:AAF0V0m7bUqfdo9I7zmxhrPt_o1-JIsmjd4
+      - uses: j/notify-telegram@v0.1.0
         if: always()
         with:
-          chat: ${{ secrets.CHAT_ID }} # user id or channel name secret
-          token: ${{ secrets.TOKEN }} # token secret
+          chat: j # user id or channel name secret
+          token: -1001258259919  # token secret
           status: ${{ job.status }} # do not modify this line
