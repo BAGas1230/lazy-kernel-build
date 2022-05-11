@@ -1,10 +1,10 @@
 #! /bin/bash
 
 # Kernel Repo
-KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/BAGas1230/kernel_xiaomi_sm6250-5
+KERNEL_REPO=https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/BAGas1230/mango414
 
 # Kernel Branch
-KERNEL_BRANCH=LA.UM.8.9.r1-10600-SM6xx.0
+KERNEL_BRANCH=LIllyrian
 
 # The name of the device for which the kernel is built
 MODEL="Asus Zenfone Max Pro M1"
@@ -31,7 +31,7 @@ BUILD_TYPE="Nightly"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc' or 'gcc49' , 'linaro & 'gcc2'
-COMPILER=clang
+COMPILER=clangxgcc
 
 # Message on anykernel when installation
 MESSAGE="Salam dari kota congyang"
